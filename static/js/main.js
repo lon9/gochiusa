@@ -2,6 +2,7 @@ $(function(){
   var APIKey = "AIzaSyAAukKB5vKPiD7RcbTdTCCgwm1CNHGAGoQ";
   var YouTubeURL = "https://www.googleapis.com/youtube/v3/search";
   var GochiusaURL = "https://gochiusa-button.herokuapp.com/count";
+  var WebSocketURL = "https://gochiusa-button.herokuapp.com";
 
   var finishVideoLoad = false;
   var finishGetCount = false;
@@ -73,7 +74,7 @@ $(function(){
   }
 
   // WebSocket
-  var socket = io.connect('http://localhost:3000');
+  var socket = io.connect(WebSocketURL);
   socket.on('connect', function(){
     socket.on('count', function(data){
       nicoscreen.add("あぁ^～心がぴょんぴょんするんじゃぁ^～");

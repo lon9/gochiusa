@@ -1,0 +1,17 @@
+#!/bin/sh
+
+CMDNAME=`basename $0`
+
+if [ $# -ne 1 ]; then
+  echo "Usage: $CMDNAME <commit message>"
+  exit 1
+fi
+
+git add -A
+git commit -m "$1"
+git push -u origin master
+git checkout gh-pages
+git rebase master
+git push origin gh-pages
+git checkout master
+
