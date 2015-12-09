@@ -1,6 +1,6 @@
 @font-face{
   font-family: 'JKGothic';
-  src:url('/gochiusa/static/font/JKG-M_3.ttf');
+  src:url('../font/JKG-M_3.ttf');
 }
 
 body{

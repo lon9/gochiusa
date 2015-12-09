@@ -7,6 +7,10 @@ $(function(){
   var finishVideoLoad = false;
   var finishGetCount = false;
 
+  if(_ua.Mobile || _ua.Tablet){
+    finishVideoLoad = true;
+  }
+
   // Ajax
   $.ajax({
     type:"GET",
@@ -124,6 +128,4 @@ $(function(){
       nicoscreen.start();
     }, 200);
   });
-
-
 });
