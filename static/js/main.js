@@ -93,7 +93,7 @@ $(function(){
     if(finishGetCount){
       ready();
     }
-  })
+  });
 
   function ready(){
     $('.loading').hide();
