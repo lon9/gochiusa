@@ -13,7 +13,7 @@ h1, p, div{
   font-family:JKGothic;
 }
 
-.container{
+.content{
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -22,6 +22,12 @@ h1, p, div{
 	margin: auto;
   width:40%;	
   height:20%;
+}
+
+.links{
+  position:absolute;
+  right:24px;
+  bottom:24px;
 }
 
 .show{

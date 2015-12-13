@@ -97,8 +97,7 @@ $(function(){
 
   function ready(){
     $('.loading').hide();
-    $('.player').show();
-    $('.container').show();
+    $('.hid').show();
   }
 
   // WebSocket
@@ -111,8 +110,7 @@ $(function(){
   });
 
   // サーバとのコネクション確立まで表示を消す
-  $('.player').hide();
-  $('.container').hide();
+  $('.hid').hide();
 
   // フィルターセット
   var filters = {
